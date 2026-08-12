@@ -46,9 +46,12 @@
     - AnomalyRockGold
     - AnomalyRockQuartz
     - AnomalyRockUranium
+<<<<<<< HEAD
     - AnomalyRockBananium
     - AnomalyRockPlasma # Frontier
     - AnomalyRockSalt # Frontier
+=======
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     chance: 1
     offset: 0.15
 

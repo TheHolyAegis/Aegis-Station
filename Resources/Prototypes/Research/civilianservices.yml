@@ -100,6 +100,10 @@
   - FauxTileAstroGrass
   - FauxTileMowedAstroGrass
   - FauxTileJungleAstroGrass
+<<<<<<< HEAD
+=======
+  - FauxTileDarkAstroGrass
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - FauxTileAstroIce
   - FauxTileAstroSnow
   - FauxTileAstroAsteroidSand

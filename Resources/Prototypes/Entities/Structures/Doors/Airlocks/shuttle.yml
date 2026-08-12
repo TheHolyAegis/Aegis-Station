@@ -30,8 +30,49 @@
           position: "0,-0.5"
         hard: false
   - type: Sprite
+<<<<<<< HEAD
     sprite: Structures/Doors/Airlocks/Standard/shuttle.rsi
     snapCardinals: false
+=======
+    sprite: Structures/Doors/Airlocks/Standard/shuttle-base.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+    - state: closed_unlit
+      shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle.rsi
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
+      visible: true
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle.rsi
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: bolted_unlit
+      shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle.rsi
+      map: ["enum.DoorVisualLayers.BaseBolted"]
+    - state: emergency_unlit
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle.rsi
+      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
+      shader: unshaded
+    - state: panel_open
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.HUD"]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.Sparks"]
+    - state: sparks
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: ["enum.DoorVisualLayers.BaseEmagging"]
+      shader: unshaded
+      visible: false
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: Wires
     layoutId: Docking
   - type: Door
@@ -59,8 +100,15 @@
   - type: StaticPrice
     price: 350
   - type: Paintable
+<<<<<<< HEAD
     #group: null            # Frontier - Paintable docking airlocks
     group: DockingStandard  # Frontier - Paintable docking airlocks
+=======
+    group: null
+  - type: DirectionalArrowIndicator
+    arrows:
+    - offset: 0, -1.5
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: entity
   id: AirlockGlassShuttle
@@ -70,7 +118,7 @@
   description: Necessary for connecting two space craft together.
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/shuttle.rsi
+    sprite: Structures/Doors/Airlocks/Glass/shuttle-base.rsi
   - type: Occluder
     enabled: false
   - type: Door
@@ -100,7 +148,11 @@
     noRot: false
   - type: Rotatable
   - type: Sprite
+<<<<<<< HEAD
     sprite: Structures/Doors/Airlocks/Standard/shuttle.rsi # Frontier: Glass<Standard
+=======
+    sprite: Structures/Doors/Airlocks/Glass/shuttle-base.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: closed
     snapCardinals: false
   - type: Construction
@@ -115,7 +167,7 @@
   description: Necessary for connecting two space craft together.
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/shuttle_syndicate.rsi
+    sprite: Structures/Doors/Airlocks/Glass/shuttle-syndicate.rsi
 
 - type: entity
   parent: AirlockShuttle
@@ -125,14 +177,55 @@
   description: Necessary for connecting two space craft together.
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi
+    sprite: Structures/Doors/Airlocks/Standard/shuttle-syndicate.rsi
 
 - type: entity
   parent: AirlockShuttle
   id: AirlockShuttleXenoborg
+<<<<<<< HEAD
   suffix: Docking
   name: external airlock
   description: Necessary for connecting two space craft together.
+=======
+  name: external mechadermis airlock
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/shuttle_xenoborg.rsi
+    sprite: Structures/Doors/Airlocks/Standard/shuttle-xenoborg.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+    - state: closed_unlit
+      shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle-xenoborg.rsi
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
+      visible: true
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle.rsi
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: bolted_unlit
+      shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle-xenoborg.rsi
+      map: ["enum.DoorVisualLayers.BaseBolted"]
+    - state: emergency_unlit
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects-shuttle-xenoborg.rsi
+      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
+      shader: unshaded
+    - state: panel_open
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.HUD"]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.Sparks"]
+    - state: sparks
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: ["enum.DoorVisualLayers.BaseEmagging"]
+      shader: unshaded
+      visible: false

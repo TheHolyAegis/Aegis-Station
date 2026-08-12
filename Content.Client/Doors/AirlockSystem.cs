@@ -92,6 +92,7 @@ public sealed class AirlockSystem : SharedAirlockSystem
             boltedVisible = _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.BoltLights, out var lights, args.Component)
                             && lights && (state == DoorState.Closed || state == DoorState.Welded);
 
+<<<<<<< HEAD
             emergencyLightsVisible = _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.EmergencyLights, out var eaLights, args.Component) && eaLights;
             unlitVisible =
                     (state == DoorState.Closing
@@ -100,6 +101,23 @@ public sealed class AirlockSystem : SharedAirlockSystem
                 || (state == DoorState.Open && comp.OpenUnlitVisible)
                 || (_appearanceSystem.TryGetData<bool>(uid, DoorVisuals.ClosedLights, out var closedLights, args.Component) && closedLights))
                     && !boltedVisible && !emergencyLightsVisible;
+=======
+            _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.EmergencyLights, out var emergencyVisible, args.Component);
+            showEmergency = emergencyVisible;
+
+            if (!showBolted && !showEmergency)
+            {
+                if (state == DoorState.Closing || state == DoorState.Opening || state == DoorState.Denying || state == DoorState.Closed)
+                    showBaseUnlit = true;
+
+                if (state == DoorState.Open && comp.OpenUnlitVisible)
+                    showBaseUnlit = true;
+
+                _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.ClosedLights, out var closedLightsVisible, args.Component);
+                if (state == DoorState.Closed && closedLightsVisible)
+                    showBaseUnlit = true;
+            }
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
         }
 
         _sprite.LayerSetVisible((uid, args.Sprite), DoorVisualLayers.BaseUnlit, unlitVisible);

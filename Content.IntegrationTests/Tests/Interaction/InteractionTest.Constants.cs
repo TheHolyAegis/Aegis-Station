@@ -12,6 +12,10 @@ public abstract partial class InteractionTest
     protected const string FloorItem = "FloorTileItemSteel";
     protected const string Plating = "Plating";
     protected const string Lattice = "Lattice";
+<<<<<<< HEAD
+=======
+    protected const string PlatingSnow = "PlatingSnow";
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
     // Structures
     protected const string Airlock = "Airlock";

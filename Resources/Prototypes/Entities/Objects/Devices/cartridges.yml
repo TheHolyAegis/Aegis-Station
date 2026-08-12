@@ -106,7 +106,11 @@
     - type: Cartridge
       programName: log-probe-program-name
       icon:
+<<<<<<< HEAD
         sprite: _NF/Structures/Doors/Airlocks/Standard/nfsd.rsi # Frontier: Swap security to NFSD
+=======
+        sprite: Structures/Doors/Airlocks/Standard/security-base.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
         state: closed
     - type: LogProbeCartridge
     - type: GuideHelp

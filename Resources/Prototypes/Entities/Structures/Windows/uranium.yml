@@ -4,10 +4,16 @@
   parent: WindowRCDResistant
   components:
   - type: Sprite
+<<<<<<< HEAD
     drawdepth: WallTops
     sprite: _NF/Structures/Windows/uranium_window.rsi # Frontier
   - type: Icon
     sprite: _NF/Structures/Windows/uranium_window.rsi # Frontier
+=======
+    sprite: Structures/Windows/window-uranium.rsi
+  - type: Icon
+    sprite: Structures/Windows/window-uranium.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: full
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -115,7 +121,11 @@
   components:
   - type: Sprite
     drawdepth: WallTops
+<<<<<<< HEAD
     sprite: _NF/Structures/Windows/uranium_window_diagonal.rsi # Frontier
+=======
+    sprite: Structures/Windows/window-diagonal-uranium.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Tag
     tags:
@@ -123,10 +133,17 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
+<<<<<<< HEAD
     key: walls # Frontier: windows<walls
     base: state
   - type: Icon
     sprite: _NF/Structures/Windows/uranium_window_diagonal.rsi # Frontier
+=======
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Windows/window-diagonal-uranium.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Fixtures
     fixtures:
@@ -148,7 +165,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: Structures/Windows/cracks-diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: uraniumWindowDiagonal

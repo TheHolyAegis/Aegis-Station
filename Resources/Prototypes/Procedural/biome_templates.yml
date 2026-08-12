@@ -278,7 +278,7 @@
         cellularDistanceFunction: Euclidean
         cellularReturnType: Distance2
       entities:
-        - WallRockBasalt
+        - WallRock
     - !type:BiomeDummyLayer
       id: Loot
     # Fill basalt
@@ -477,6 +477,7 @@
       entities:
         - WallRockChromite
     # chasm time
+<<<<<<< HEAD
 #    - !type:BiomeEntityLayer
 #      allowedTiles:
 #      - FloorChromite
@@ -490,6 +491,21 @@
 #        gain: 0.4
 #      entities:
 #      - FloorChromiteChasm
+=======
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorChromite
+      threshold: 0.2
+      noise:
+        seed: 3
+        frequency: 0.1
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorChasmEntity
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     - !type:BiomeDummyLayer
       id: Loot
     # Fill chromite

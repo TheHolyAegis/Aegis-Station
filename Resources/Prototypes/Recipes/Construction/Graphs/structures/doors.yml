@@ -6,6 +6,7 @@
       actions:
         - !type:DestroyEntity {}
       edges:
+<<<<<<< HEAD
         - to: metalDoor
           completed:
             - !type:SnapToGrid { }
@@ -13,6 +14,8 @@
             - material: Steel
               amount: 20
               doAfter: 15
+=======
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
         - to: woodDoor
           completed:
             - !type:SnapToGrid { }
@@ -39,6 +42,7 @@
             - !type:SnapToGrid { }
           steps:
             - material: Silver
+<<<<<<< HEAD
               amount: 20
               doAfter: 15
         - to: bananiumDoor
@@ -48,6 +52,10 @@
             - material: Bananium
               amount: 5
               doAfter: 15
+=======
+              amount: 10
+              doAfter: 8
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
         - to: paperDoor
           completed:
             - !type:SnapToGrid { }
@@ -60,6 +68,7 @@
             - !type:SnapToGrid { }
           steps:
             - material: Cardboard
+<<<<<<< HEAD
               amount: 5
               doAfter: 6
     - node: metalDoor
@@ -73,6 +82,10 @@
           steps:
             - tool: Anchoring
               doAfter: 15
+=======
+              amount: 10
+              doAfter: 8
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     - node: woodDoor
       entity: WoodDoor
       edges:
@@ -142,6 +155,7 @@
           steps:
             - tool: Slicing
               doAfter: 2
+<<<<<<< HEAD
     - node: bananiumDoor
       entity: BananiumDoor
       edges:
@@ -153,3 +167,5 @@
           steps:
             - tool: Anchoring
               doAfter: 15
+=======
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))

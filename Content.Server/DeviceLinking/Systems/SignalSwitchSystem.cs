@@ -1,5 +1,4 @@
-using Content.Server.DeviceLinking.Components;
-using Content.Server.DeviceNetwork;
+using Content.Shared.DeviceLinking.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Lock;
 using Robust.Shared.Audio;
@@ -9,9 +8,16 @@ namespace Content.Server.DeviceLinking.Systems;
 
 public sealed class SignalSwitchSystem : EntitySystem
 {
+<<<<<<< HEAD
     [Dependency] private readonly DeviceLinkSystem _deviceLink = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly LockSystem _lock = default!;
+=======
+    [Dependency] private DeviceLinkSystem _deviceLink = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private LockSystem _lock = default!;
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
     public override void Initialize()
     {
@@ -41,6 +47,7 @@ public sealed class SignalSwitchSystem : EntitySystem
         if (comp.OnPort != comp.OffPort)
         {
             _deviceLink.SendSignal(uid, comp.StatusPort, comp.State);
+            _appearance.SetData(uid, SwitchVisuals.Visuals, comp.State);
         }
 
         _audio.PlayPvs(comp.ClickSound, uid, AudioParams.Default.WithVariation(0.125f).WithVolume(8f));

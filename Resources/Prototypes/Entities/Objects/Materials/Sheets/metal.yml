@@ -120,6 +120,7 @@
       map: ["base"]
   - type: Item
     heldPrefix: brass
+<<<<<<< HEAD
   - type: Appearance
   - type: FloorTile
     outputs:
@@ -134,6 +135,13 @@
           Quantity: 3.3
         - ReagentId: Copper
           Quantity: 6.7
+=======
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Brass
+        Quantity: 10
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: entity
   parent: SheetBrass

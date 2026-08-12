@@ -15,6 +15,7 @@
   weather: true
   indestructible: true
 
+<<<<<<< HEAD
 # Desert
 - type: tile
   id: FloorDesert
@@ -84,10 +85,13 @@
   weather: true
   indestructible: true
 
+=======
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 # Lava
 - type: tile
   id: FloorBasalt
   name: tiles-basalt-floor
+<<<<<<< HEAD
   sprite: /Textures/Tiles/Planet/basalt.png
   isSubfloor: true
   footstepSounds:
@@ -163,3 +167,17 @@
   indestructible: true
 
 # Wasteland
+=======
+  parent: BaseFloorPlanet
+  sprite: /Textures/Tiles/Cave/cave.png
+  edgeSpritePriority: 5
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Cave/single_edge_SE.png
+    NorthEast: /Textures/Tiles/Cave/single_edge_NE.png
+    NorthWest: /Textures/Tiles/Cave/single_edge_NW.png
+    SouthWest: /Textures/Tiles/Cave/single_edge_SW.png
+    South: /Textures/Tiles/Cave/double_edge_S.png
+    East: /Textures/Tiles/Cave/double_edge_E.png
+    North: /Textures/Tiles/Cave/double_edge_N.png
+    West: /Textures/Tiles/Cave/double_edge_W.png
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))

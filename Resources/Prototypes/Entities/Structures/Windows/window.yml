@@ -23,10 +23,16 @@
       - ForceFixRotations
       - Window
   - type: Sprite
+<<<<<<< HEAD
     drawdepth: WallTops
     sprite: _NF/Structures/Windows/window.rsi # Frontier
   - type: Icon
     sprite: _NF/Structures/Windows/window.rsi # Frontier
+=======
+    sprite: Structures/Windows/window-base.rsi
+  - type: Icon
+    sprite: Structures/Windows/window-base.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: full
   - type: Physics
     bodyType: Static
@@ -78,6 +84,8 @@
   - type: IconSmooth
     key: walls
     base: window
+  - type: PlacementReplacement
+    key: walls
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
     messagePerceivedByOthers: comp-window-knock
@@ -98,15 +106,54 @@
   - type: BlockWeather
 
 - type: entity
+<<<<<<< HEAD
+=======
+  parent: BaseWindowStructure
+  id: Window
+  components:
+  - type: Sprite
+    sprite: Structures/Windows/window-base.rsi
+  - type: Icon
+    sprite: Structures/Windows/window-base.rsi
+    state: full
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   parent: Window
   id: TintedWindow
   name: tinted window
   components:
   - type: Sprite
+<<<<<<< HEAD
     drawdepth: WallTops
     sprite: _NF/Structures/Windows/tinted_window.rsi # Frontier
   - type: Icon
     sprite: _NF/Structures/Windows/tinted_window.rsi # Frontier
+=======
+    sprite: Structures/Windows/window-tinted.rsi
+  - type: Icon
+    sprite: Structures/Windows/window-tinted.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: IconSmooth
     base: twindow
   - type: Construction
@@ -255,8 +302,12 @@
     - Window
   components:
   - type: Sprite
+<<<<<<< HEAD
     drawdepth: WallTops
     sprite: _NF/Structures/Windows/window_diagonal.rsi # Frontier
+=======
+    sprite: Structures/Windows/window-base-diagonal.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Tag
     tags:
@@ -264,9 +315,16 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
+<<<<<<< HEAD
     base: state
   - type: Icon
     sprite: _NF/Structures/Windows/window_diagonal.rsi # Frontier
+=======
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Windows/window-base-diagonal.rsi
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Fixtures
     fixtures:
@@ -288,7 +346,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
+      sprite: Structures/Windows/cracks-diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: windowDiagonal

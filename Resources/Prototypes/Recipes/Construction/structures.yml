@@ -291,6 +291,7 @@
   placementMode: SnapgridCenter
 
 - type: construction
+<<<<<<< HEAD
   id: ClockworkGrilleDiagonal
   graph: GrilleDiagonal
   startNode: start
@@ -301,6 +302,140 @@
       failIfSpace: false
   objectType: Structure
   placementMode: SnapgridCenter
+=======
+  abstract: true
+  parent: BaseStructure
+  id: BaseStructureFullTile
+  canRotate: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  abstract: true
+  parent: BaseStructure
+  id: BaseStructureFullTileDirectional
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  abstract: true
+  parent: BaseStructure
+  id: BaseWindow
+  graph: Window
+  canBuildInImpassable: true
+  canRotate: false
+  conditions:
+  - !type:EmptyOrWindowValidInTile
+  - !type:NoWindowsInTile
+
+- type: construction
+  abstract: true
+  parent: BaseWindow
+  id: BaseWindowDiagonal
+  graph: WindowDiagonal
+  canRotate: true
+
+- type: construction
+  abstract: true
+  parent: BaseStructure
+  id: BaseShutters
+  graph: Shutters
+  canBuildInImpassable: true
+# endregion Base
+
+# region Walls
+- type: construction
+  parent: BaseStructureFullTile
+  id: Girder
+  graph: Girder
+  targetNode: girder
+
+- type: construction
+  parent: Girder
+  id: ReinforcedGirder
+  targetNode: reinforcedGirder
+
+- type: construction
+  parent: Girder
+  id: Wall
+  targetNode: wall
+
+- type: construction
+  parent: Girder
+  id: ReinforcedWall
+  targetNode: reinforcedWall
+
+- type: construction
+  parent: Girder
+  id: WoodWall
+  graph: Barricade
+  targetNode: woodWall
+
+- type: construction
+  parent: Girder
+  id: UraniumWall
+  targetNode: uraniumWall
+
+- type: construction
+  parent: Girder
+  id: SilverWall
+  targetNode: silverWall
+
+- type: construction
+  parent: Girder
+  id: PlasmaWall
+  targetNode: plasmaWall
+
+- type: construction
+  parent: Girder
+  id: GoldWall
+  targetNode: goldWall
+
+- type: construction
+  parent: Girder
+  id: ShuttleWall
+  targetNode: shuttleWall
+
+- type: construction
+  parent: Girder
+  id: DiagonalShuttleWall
+  name: construction-recipe-diagonal-shuttle-wall
+  targetNode: diagonalshuttleWall
+  canRotate: true
+
+- type: construction
+  parent: Girder
+  id: MeatWall
+  targetNode: meatWall
+
+- type: construction
+  parent: Girder
+  id: Cardwall
+  graph: Cardwall
+  targetNode: cardwall
+  conditions:
+  - !type:TileNotBlocked
+    failIfSpace: false
+# endregion Walls
+
+# region Grilles
+- type: construction
+  parent: BaseStructureFullTile
+  id: Grille
+  graph: Grille
+  targetNode: grille
+  conditions:
+  - !type:TileNotBlocked
+    failIfSpace: false
+
+- type: construction
+  parent: Grille
+  id: GrilleDiagonal
+  graph: GrilleDiagonal
+  targetNode: grilleDiagonal
+  canRotate: true
+# endregion Grilles
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: construction
   id: Window
@@ -373,6 +508,7 @@
   canRotate: false
 
 - type: construction
+<<<<<<< HEAD
   id: ClockworkWindow
   graph: Window
   startNode: start
@@ -401,6 +537,9 @@
   placementMode: SnapgridCenter
 
 - type: construction
+=======
+  parent: BaseWindow
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: PlasmaWindow
   graph: Window
   startNode: start
@@ -497,6 +636,7 @@
   placementMode: SnapgridCenter
 
 - type: construction
+<<<<<<< HEAD
   id: WindowClockworkDirectional
   graph: WindowDirectional
   startNode: start
@@ -510,6 +650,9 @@
   placementMode: SnapgridCenter
 
 - type: construction
+=======
+  parent: WindowDirectional
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: PlasmaWindowDirectional
   graph: WindowDirectional
   startNode: start
@@ -704,6 +847,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
 
+<<<<<<< HEAD
 - type: construction
   id: FloorBananium
   graph: FloorBananium
@@ -719,6 +863,9 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+=======
+# endregion Floors
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: construction
   id: Barricade
@@ -1002,6 +1149,7 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
   id: PinionAirlock
   name: construction-recipe-pinion-airlock
   graph: PinionAirlock
@@ -1028,15 +1176,48 @@
     - !type:TileNotBlocked
 
 - type: construction
+=======
+  parent: BaseStructureFullTileDirectional
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: AirlockShuttle
   graph: AirlockShuttle
   startNode: start
   targetNode: airlock
+<<<<<<< HEAD
   category: construction-category-structures
   #  state: assembly
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+=======
+
+- type: construction
+  parent: AirlockShuttle
+  id: AirlockGlassShuttle
+  name: construction-recipe-airlock-glass-shuttle
+  targetNode: airlockGlass
+# endregion Airlocks
+
+# region Windoors
+- type: construction
+  parent: BaseStructureFullTileDirectional
+  id: Windoor
+  graph: Windoor
+  targetNode: windoor
+
+- type: construction
+  parent: Windoor
+  id: SecureWindoor
+  targetNode: windoorSecure
+# endregion Windoors
+
+# region Lighting
+- type: construction
+  parent: BaseStructureFullTileDirectional
+  id: LightTubeFixture
+  graph: LightFixture
+  targetNode: tubeLight
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   conditions:
   - !type:TileNotBlocked
 
@@ -1173,6 +1354,7 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
   id: MetalDoor
   graph: DoorGraph
   startNode: start
@@ -1185,6 +1367,15 @@
     - !type:TileNotBlocked
 
 - type: construction
+=======
+  parent: BaseStructureFullTileDirectional
+  id: SilverDoor
+  graph: DoorGraph
+  targetNode: silverDoor
+
+- type: construction
+  parent: SilverDoor
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: WoodDoor
   graph: DoorGraph
   startNode: start
@@ -1197,6 +1388,10 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
+=======
+  parent: SilverDoor
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: PlasmaDoor
   graph: DoorGraph
   startNode: start
@@ -1209,6 +1404,10 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
+=======
+  parent: SilverDoor
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: GoldDoor
   graph: DoorGraph
   startNode: start
@@ -1221,6 +1420,7 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
   id: SilverDoor
   graph: DoorGraph
   startNode: start
@@ -1233,6 +1433,9 @@
     - !type:TileNotBlocked
 
 - type: construction
+=======
+  parent: SilverDoor
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: PaperDoor
   graph: DoorGraph
   startNode: start
@@ -1243,16 +1446,28 @@
   canBuildInImpassable: false
 
 - type: construction
+<<<<<<< HEAD
+=======
+  parent: SilverDoor
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: CardDoor
   graph: DoorGraph
   startNode: start
   targetNode: cardDoor
+<<<<<<< HEAD
   category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
 
 - type: construction
+=======
+# endregion Material Doors
+
+# region Plastic Flaps
+- type: construction
+  parent: BaseStructureFullTileDirectional
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: PlasticFlapsClear
   name: construction-recipe-plastic-flaps-clear
   graph: PlasticFlapsGraph
@@ -1342,6 +1557,22 @@
     - !type:TileNotBlocked
 
 - type: construction
+<<<<<<< HEAD
+=======
+  parent: BaseStructureFullTileDirectional
+  id: EnergyGate
+  graph: EnergyGate
+  targetNode: energyGate
+
+- type: construction
+  parent: BaseStructureFullTileDirectional
+  id: ConveyorBelt
+  graph: ConveyorGraph
+  targetNode: entity
+
+- type: construction
+  parent: BaseStructureFullTile
+>>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FungalSoil
   graph: Soil
   startNode: start
