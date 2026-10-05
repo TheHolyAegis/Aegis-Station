@@ -10,6 +10,7 @@
     OrePlasma: 0.20
     OreUranium: 0.20
     OreArtifactFragment: 0.10
+    OreBananium: 0.10
 
 - type: oreDunGen
   id: OreIron
@@ -92,7 +93,6 @@
   maxGroupSize: 7
 
 - type: oreDunGen
-<<<<<<< HEAD
   id: OreBananium
   # replacement: AsteroidRock # upstream#33105
   entityMask: # upstream#33105
@@ -103,8 +103,6 @@
   maxGroupSize: 6
 
 - type: oreDunGen
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: OreArtifactFragment
   # replacement: AsteroidRock # upstream#33105
   entityMask: # upstream#33105

@@ -53,15 +53,12 @@
             - material: ReinforcedGlass
               amount: 2
               doAfter: 4
-<<<<<<< HEAD
 
         - to: clockworkWindow
           steps:
             - material: ClockworkGlass
               amount: 2
               doAfter: 3
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
     - node: window
       entity: Window
@@ -204,7 +201,6 @@
             - tool: Anchoring
               doAfter: 3
 
-<<<<<<< HEAD
     - node: clockworkWindow
       entity: ClockworkWindow
       edges:
@@ -228,8 +224,6 @@
             - tool: Anchoring
               doAfter: 3
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     - node: shuttleWindow
       entity: ShuttleWindow
       edges:

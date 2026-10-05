@@ -11,7 +11,7 @@
   - type: Rotatable
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/silver-door.rsi
+    sprite: Structures/Doors/MineralDoors/metal_door.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -61,11 +61,6 @@
         acts: ["Destruction"]
   - type: Occluder
   - type: BlockWeather
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
-  - type: PlacementReplacement
-    key: walls
 
 - type: entity
   parent: BaseMaterialDoor
@@ -74,7 +69,6 @@
   components:
   - type: NavMapDoor
 
-<<<<<<< HEAD
 - type: entity
   id: MetalDoor
   name: metal door
@@ -85,96 +79,12 @@
     node: metalDoor
 
 - type: entity
-=======
-### Metal doors ###
-- type: entity
-  parent: BaseMaterialDoorNavMap
-  id: PlasmaDoor
-  name: plasma door
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/plasma-door.rsi
-  - type: Construction
-    graph: DoorGraph
-    node: plasmaDoor
-  - type: Destructible
-    thresholds:
-    - trigger: &DamageTrigger150
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetPlasma1:
-            min: 3
-            max: 5
-
-- type: entity
-  parent: BaseMaterialDoorNavMap
-  id: GoldDoor
-  name: gold door
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/gold-door.rsi
-  - type: Construction
-    graph: DoorGraph
-    node: goldDoor
-  - type: Destructible
-    thresholds:
-    - trigger: *DamageTrigger150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          IngotGold1:
-            min: 3
-            max: 5
-
-- type: entity
-  parent: BaseMaterialDoorNavMap
-  id: SilverDoor
-  name: silver door
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/silver-door.rsi
-  - type: Construction
-    graph: DoorGraph
-    node: silverDoor
-  - type: Destructible
-    thresholds:
-    - trigger: *DamageTrigger150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          IngotSilver1:
-            min: 3
-            max: 5
-
-### Other doors ###
-
-- type: entity
-  parent: BaseMaterialDoorNavMap
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: WoodDoor
   name: wooden door
   parent: BaseMaterialDoorNavMap
   components:
   - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/wood-door.rsi
+    sprite: Structures/Doors/MineralDoors/wood_door.rsi
   - type: Door
     openSound:
       path: /Audio/Effects/door_open.ogg
@@ -201,21 +111,7 @@
   parent: BaseMaterialDoorNavMap
   components:
   - type: Sprite
-<<<<<<< HEAD
     sprite: Structures/Doors/MineralDoors/paper_door.rsi
-=======
-    sprite: Structures/Doors/MaterialDoors/paper-door.rsi
-  - type: Door
-    openSound:
-      path: /Audio/Effects/paperdoor_openclose.ogg
-    closeSound:
-      path: /Audio/Effects/paperdoor_openclose.ogg
-  - type: Construction
-    graph: DoorGraph
-    node: paperDoor
-  - type: Damageable
-    damageModifierSet: Wood
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: Destructible
     thresholds:
     - trigger:
@@ -300,7 +196,6 @@
   description: A door, leading to the lands of the spiders... or a spaced room.
   components:
   - type: Sprite
-<<<<<<< HEAD
     sprite: Structures/Doors/web_door.rsi
   - type: Construction
     graph: WebStructures
@@ -332,9 +227,6 @@
             max: 5
   - type: Damageable
     damageModifierSet: Web
-=======
-    sprite: Structures/Doors/MaterialDoors/web-door.rsi
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: Door
     closeSound:
       path: /Audio/Effects/rustle1.ogg
@@ -347,7 +239,7 @@
   name: cardboard door
   components:
   - type: Sprite
-    sprite: Structures/Doors/MaterialDoors/card-door.rsi
+    sprite: Structures/Doors/MineralDoors/card_door.rsi
   - type: Door
     openSound:
       path: /Audio/Effects/card_drag.ogg 
@@ -376,7 +268,6 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialCardboard:
-<<<<<<< HEAD
             min: 2
             max: 4
       - !type:DoActsBehavior
@@ -384,7 +275,3 @@
   - type: Construction
     graph: DoorGraph
     node: cardDoor
-=======
-            min: 3
-            max: 5
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))

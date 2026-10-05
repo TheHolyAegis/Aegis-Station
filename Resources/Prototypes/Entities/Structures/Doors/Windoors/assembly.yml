@@ -77,7 +77,6 @@
     graph: Windoor
     node: assemblySecure
 
-<<<<<<< HEAD
 - type: entity
   id: WindoorAssemblyClockwork
   name: clockwork windoor assembly
@@ -105,8 +104,6 @@
     graph: Windoor
     node: assemblyClockwork
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 #plasma windoor assemblies
 - type: entity
   id: WindoorAssemblyPlasma

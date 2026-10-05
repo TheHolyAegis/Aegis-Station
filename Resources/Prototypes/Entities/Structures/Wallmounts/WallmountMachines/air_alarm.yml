@@ -72,14 +72,13 @@
   - type: Appearance
   - type: WiresVisuals
   - type: Sprite
-    sprite: Structures/Wallmounts/air-alarm.rsi
-    offset: 0, -0.25
+    sprite: Structures/Wallmounts/air_monitors.rsi
     layers:
-    - state: base
+    - state: alarmp
+      map: ["airAlarmBase"]
     - state: alarm0
-      shader: unshaded
       map: ["airAlarmState"] # TODO: fire alarm enum
-    - state: panel
+    - state: alarmx
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Construction
     graph: AirAlarm
@@ -118,17 +117,17 @@
   description: An air alarm. Doesn't look like it'll be alarming air any time soon.
   components:
   - type: Sprite
-    sprite: Structures/Wallmounts/air-alarm.rsi
+    sprite: Structures/Wallmounts/air_monitors.rsi
     layers:
-    - state: panel
+    - state: alarm_b1
       map: [ "enum.ConstructionVisuals.Layer" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: panel }
-          electronics: { state: panel }
+          assembly: { state: alarm_b1 }
+          electronics: { state: alarm_b1 }
   - type: Construction
     graph: AirAlarm
     node: assembly
@@ -136,7 +135,6 @@
     anchored: true
   - type: Destructible
     thresholds:
-<<<<<<< HEAD
       - trigger:
           !type:DamageTrigger
           damage: 20
@@ -175,16 +173,3 @@
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/air_monitors_xeno.rsi
-=======
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalGlassBreak
-          params:
-            volume: -4
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))

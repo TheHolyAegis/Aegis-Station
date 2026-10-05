@@ -469,7 +469,6 @@
       - NFMobSpawnCrabUranium # Frontier: use NF variant
 
 - type: entity
-<<<<<<< HEAD
   id: AnomalyRockBananium
   parent: AnomalyRockBase
   suffix: Rock, Bananium
@@ -520,8 +519,6 @@
       - NFMobSpawnCrabBananium # Frontier: use NF prefix
 
 - type: entity
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: AnomalyRockQuartz
   parent: AnomalyRockBase
   suffix: Rock, Quartz

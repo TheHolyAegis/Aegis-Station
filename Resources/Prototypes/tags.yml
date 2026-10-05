@@ -474,12 +474,7 @@
   id: Document
 
 - type: Tag
-<<<<<<< HEAD
   id: DonkPocket
-=======
-  id: DoorElectronics  # ConstructionGraph: BlastDoor, Windoor
-                       # Used interchangeably with DoorElectronicsComponent, sometimes even in the same graph. TODO pick one
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: Tag
   id: Donut

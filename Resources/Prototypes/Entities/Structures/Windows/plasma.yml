@@ -4,17 +4,10 @@
   parent: WindowRCDResistant
   components:
   - type: Sprite
-<<<<<<< HEAD
     drawdepth: WallTops
     sprite: _NF/Structures/Windows/plasma_window.rsi # Frontier
   - type: Icon
     sprite: _NF/Structures/Windows/plasma_window.rsi # Frontier
-=======
-    sprite: Structures/Windows/window-plasma.rsi
-  - type: Icon
-    sprite: Structures/Windows/window-plasma.rsi
-    state: full
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass
@@ -127,11 +120,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-<<<<<<< HEAD
     sprite: _NF/Structures/Windows/plasma_diagonal.rsi # Frontier
-=======
-    sprite: Structures/Windows/window-diagonal-plasma.rsi
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Tag
     tags:
@@ -139,17 +128,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-<<<<<<< HEAD
     key: walls # Frontier: windows<walls
     base: state
   - type: Icon
     sprite: _NF/Structures/Windows/plasma_diagonal.rsi # Frontier
-=======
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Windows/window-diagonal-plasma.rsi
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     state: state0
   - type: Fixtures
     fixtures:
@@ -171,7 +153,7 @@
     - East
   - type: DamageVisuals
     damageOverlay:
-      sprite: Structures/Windows/cracks-diagonal.rsi
+      sprite: Structures/Windows/cracks_diagonal.rsi
   - type: Construction
     graph: WindowDiagonal
     node: plasmaWindowDiagonal

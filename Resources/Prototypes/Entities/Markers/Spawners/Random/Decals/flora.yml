@@ -11,19 +11,18 @@
     - FloorAstroGrass
     - FloorMowedAstroGrass
     - FloorJungleAstroGrass
-<<<<<<< HEAD
-=======
-    - FloorDarkAstroGrass
-    - FloorDesertAstroSand
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     - FloorAstroIce
     - FloorAstroSnow
     - FloorAstroAsteroidSand
+    - FloorAsteroidSandUnvariantized
+    - FloorAsteroidIronsandUnvariantized
     - FloorCave
     - FloorAsteroidIronsand
     - FloorAsteroidTile
+    - FloorAsteroidSandDug
     - FloorAsteroidSand
     - FloorDirt
+    - FloorGrassLight
     - FloorGrassDark
     - FloorGrassJungle
     - FloorGrass

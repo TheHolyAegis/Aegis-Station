@@ -13,33 +13,12 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-<<<<<<< HEAD
   itemDrop: FloorTileItemSteel
   heatCapacity: 10000
-=======
-  heatCapacity: 10000
-  weather: false
-  baseTurf: Plating
-  baseWhitelist:
-  - FloorAsteroidIronsand
-  - FloorAsteroidSand
-  - FloorAsteroidSandBorderless
-  - FloorAsteroidIronsandBorderless
-  - PlatingAsteroid
-  - PlatingSnow
-  - FloorPlanetDirt
-  - FloorDesert
-  - FloorPlanetGrass
-  - FloorSnow
-  - FloorDirt
-  - PlatingRCD
-  - FloorHullReinforced
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 
 - type: tile
   id: FloorSteelCheckerLight
   name: tiles-steel-floor-checker-light
-<<<<<<< HEAD
   sprite: /Textures/Tiles/cafeteria.png
   variants: 4
   placementVariants:
@@ -52,16 +31,12 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
-  sprite: /Textures/Tiles/Checker/checker-light.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemSteelCheckerLight
   heatCapacity: 10000
 
 - type: tile
   id: FloorSteelCheckerDark
   name: tiles-steel-floor-checker-dark
-<<<<<<< HEAD
   sprite: /Textures/Tiles/checker_dark.png
   variants: 4
   placementVariants:
@@ -74,14 +49,10 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
-  sprite: /Textures/Tiles/Checker/checker-dark.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemSteelCheckerDark
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorSteelMini
   name: tiles-steel-floor-mini
   sprite: /Textures/Tiles/steel_mini.png
@@ -262,11 +233,8 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorWood
   name: tiles-wood
-<<<<<<< HEAD
   sprite: /Textures/Tiles/wood.png
   variants: 4
   placementVariants:
@@ -277,9 +245,6 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Wood/wood.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -288,7 +253,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorWhite
   name: tiles-white-floor
   sprite: /Textures/Tiles/white.png
@@ -661,8 +625,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorReinforced
   name: tiles-reinforced-floor
   sprite: /Textures/Tiles/reinforced.png
@@ -675,7 +637,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorMono
   name: tiles-mono-floor
   sprite: /Textures/Tiles/mono.png
@@ -688,8 +649,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorLino
   name: tiles-linoleum-floor
   sprite: /Textures/Tiles/lino.png
@@ -702,7 +661,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorSteelDirty
   name: tiles-dirty-steel-floor
   sprite: /Textures/Tiles/steel_dirty.png
@@ -733,8 +691,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorMetalDiamond
   name: tiles-diamond-plate-floor
   sprite: /Textures/Tiles/metaldiamond.png
@@ -747,7 +703,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorRockVault
   name: tiles-rock-floor
   sprite: /Textures/Tiles/rock_vault.png
@@ -760,8 +715,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorBlue
   name: tiles-blue-tile
   sprite: /Textures/Tiles/blue.png
@@ -777,7 +730,6 @@
   id: FloorSteelLime
   name: tiles-lime-floor
   sprite: /Textures/Tiles/lime.png
-<<<<<<< HEAD
   variants: 4
   placementVariants:
   - 1.0
@@ -789,12 +741,9 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemLime
   heatCapacity: 10000
 
-<<<<<<< HEAD
 - type: tile
   id: FloorMining
   name: tiles-mining-tile
@@ -832,9 +781,6 @@
   heatCapacity: 10000
 
 # Departamental
-=======
-# Departmental
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 - type: tile
   id: FloorFreezer
   name: tiles-freezer
@@ -848,7 +794,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorShowroom
   name: tiles-showroom-floor
   sprite: /Textures/Tiles/showroom.png
@@ -873,11 +818,8 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorBar
   name: tiles-bar-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/bar.png
   variants: 4
   placementVariants:
@@ -890,55 +832,40 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
-  sprite: /Textures/Tiles/Checker/checker-bar.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemBar
   heatCapacity: 10000
 
 - type: tile
   id: FloorClown
   name: tiles-clown-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/clown.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
-  sprite: /Textures/Tiles/Checker/checker-clown.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemClown
   heatCapacity: 10000
 
 - type: tile
   id: FloorMime
   name: tiles-mime-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/mime.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
-=======
-  sprite: /Textures/Tiles/Checker/checker-mime.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   itemDrop: FloorTileItemMime
   heatCapacity: 10000
 
 - type: tile
   id: FloorKitchen
   name: tiles-kitchen-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/kitchen.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Checker/checker-kitchen.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemKitchen
@@ -947,20 +874,15 @@
 - type: tile
   id: FloorLaundry
   name: tiles-laundry-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/laundry.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Checker/checker-laundry.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemLaundry
   heatCapacity: 10000
 
-<<<<<<< HEAD
 - type: tile
   id: FloorSteelDamaged
   name: tiles-steel-floor
@@ -1143,8 +1065,6 @@
   itemDrop: FloorTileItemOldConcreteSmooth
   heatCapacity: 10000
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 # Carpets (non smoothing)
 - type: tile
   id: FloorArcadeBlue
@@ -1162,7 +1082,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorArcadeBlue2
   name: tiles-blue-arcade-floor
   sprite: /Textures/Tiles/arcadeblue2.png
@@ -1178,8 +1097,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorArcadeRed
   name: tiles-red-arcade-floor
   sprite: /Textures/Tiles/arcadered.png
@@ -1195,7 +1112,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorEighties
   name: tiles-eighties-floor
   sprite: /Textures/Tiles/eighties.png
@@ -1211,8 +1127,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorCarpetClown
   name: tiles-clown-carpet-floor
   sprite: /Textures/Tiles/carpetclown.png
@@ -1280,7 +1194,6 @@
   itemDrop: FloorTileItemGym
   heatCapacity: 10000
 
-<<<<<<< HEAD
 # Shuttle
 - type: tile
   id: FloorShuttleWhite
@@ -1409,8 +1322,6 @@
   heatCapacity: 10000
 
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 # Materials
 - type: tile
   id: FloorGold
@@ -1437,7 +1348,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorGlass
   name: tiles-glass-floor
   sprite: /Textures/Tiles/glass.png
@@ -1474,8 +1384,6 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorMetalFoam
   name: tiles-metal-foam
   sprite: /Textures/Tiles/foammetal.png
@@ -1490,7 +1398,6 @@
   itemDrop: SheetSteel1
   heatCapacity: 10000
 
-<<<<<<< HEAD
 # Circuits
 - type: tile
   id: FloorGreenCircuit
@@ -1856,13 +1763,10 @@
     North: /Textures/Tiles/Asteroid/iron_double_edge.png
     West: /Textures/Tiles/Asteroid/iron_double_edge.png
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 # Caves
 - type: tile
   id: FloorCave
   name: tiles-cave
-<<<<<<< HEAD
   sprite: /Textures/Tiles/cave.png
   variants: 7
   placementVariants:
@@ -1893,19 +1797,6 @@
   - 1.0
   - 1.0
   - 1.0
-=======
-  sprite: /Textures/Tiles/Cave/cave.png
-  edgeSpritePriority: 5
-  edgeSprites:
-    SouthEast: /Textures/Tiles/Cave/single_edge_SE.png
-    NorthEast: /Textures/Tiles/Cave/single_edge_NE.png
-    NorthWest: /Textures/Tiles/Cave/single_edge_NW.png
-    SouthWest: /Textures/Tiles/Cave/single_edge_SW.png
-    South: /Textures/Tiles/Cave/double_edge_S.png
-    East: /Textures/Tiles/Cave/double_edge_E.png
-    North: /Textures/Tiles/Cave/double_edge_N.png
-    West: /Textures/Tiles/Cave/double_edge_W.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1916,7 +1807,6 @@
   id: FloorFlesh
   name: tiles-flesh-floor
   sprite: /Textures/Tiles/meat.png
-<<<<<<< HEAD
   variants: 4
   placementVariants:
   - 1.0
@@ -1926,9 +1816,6 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  variants: 2
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepBlood
   itemDrop: FloorTileItemFlesh
@@ -1936,7 +1823,6 @@
   heatCapacity: 10000
 
 - type: tile
-<<<<<<< HEAD
   id: FloorTechMaint2
   name: tiles-techmaint2-floor
   sprite: /Textures/Tiles/steel_maint.png
@@ -1949,11 +1835,8 @@
   heatCapacity: 10000
 
 - type: tile
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: FloorTechMaint3
   name: tiles-techmaint3-floor
-<<<<<<< HEAD
   sprite: /Textures/Tiles/grating_maint.png
   variants: 4
   placementVariants:
@@ -1964,9 +1847,6 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/grating-maint.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGratingMaint
@@ -1975,7 +1855,6 @@
 - type: tile
   id: FloorWoodTile
   name: tiles-wood2
-<<<<<<< HEAD
   sprite: /Textures/Tiles/wood_tile.png
   variants: 4
   placementVariants:
@@ -1986,9 +1865,6 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Wood/wood-tile.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -1999,7 +1875,7 @@
 - type: tile
   id: FloorBrokenWood
   name: tiles-wood3
-  sprite: /Textures/Tiles/Wood/wood-broken.png
+  sprite: /Textures/Tiles/wood_broken.png
   variants: 7
   placementVariants:
   - 1.0
@@ -2020,27 +1896,12 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorWoodLarge
-  parent: BaseStationTile
-  name: tiles-wood-large
-  sprite: /Textures/Tiles/Wood/wood-large.png
-  footstepSounds:
-    collection: FootstepWood
-  barestepSounds:
-    collection: BarestepWood
-  itemDrop: FloorTileItemWoodLarge
-
-- type: tile
   id: FloorWebTile
   name: tiles-web
-<<<<<<< HEAD
   sprite: /Textures/Tiles/Misc/Web/web_tile.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/web.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepCarpet
   barestepSounds:
@@ -2051,7 +1912,6 @@
 - type: tile
   id: FloorChromite
   name: tiles-chromite
-<<<<<<< HEAD
   sprite: /Textures/Tiles/chromite.png
   variants: 7
   placementVariants:
@@ -2062,19 +1922,6 @@
   - 1.0
   - 1.0
   - 1.0
-=======
-  sprite: /Textures/Tiles/Chromite/chromite.png
-  edgeSpritePriority: 5
-  edgeSprites:
-    SouthEast: /Textures/Tiles/Chromite/single_edge_SE.png
-    NorthEast: /Textures/Tiles/Chromite/single_edge_NE.png
-    NorthWest: /Textures/Tiles/Chromite/single_edge_NW.png
-    SouthWest: /Textures/Tiles/Chromite/single_edge_SW.png
-    South: /Textures/Tiles/Chromite/double_edge_S.png
-    East: /Textures/Tiles/Chromite/double_edge_E.png
-    North: /Textures/Tiles/Chromite/double_edge_N.png
-    West: /Textures/Tiles/Chromite/double_edge_W.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -2115,7 +1962,6 @@
     collection: FootstepHull
   itemDrop: PartRodMetal1 #same case as FloorHull
 
-<<<<<<< HEAD
 # Faux sci tiles
 
 # Grass
@@ -2310,12 +2156,9 @@
   itemDrop: FloorTileItemXenoMaint
   heatCapacity: 10000
 
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
 - type: tile
   id: FloorWhiteMarble
   name: tiles-white-marble
-<<<<<<< HEAD
   sprite: /Textures/Tiles/white_marble.png
   variants: 8
   placementVariants:
@@ -2330,9 +2173,6 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Marble/white-marble.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
@@ -2342,7 +2182,6 @@
 - type: tile
   id: FloorDarkMarble
   name: tiles-dark-marble
-<<<<<<< HEAD
   sprite: /Textures/Tiles/dark_marble.png
   variants: 8
   placementVariants:
@@ -2357,14 +2196,10 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-=======
-  sprite: /Textures/Tiles/Marble/dark-marble.png
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
   itemDrop: FloorTileItemDarkMarble
-<<<<<<< HEAD
   heatCapacity: 10000
 
 - type: tile
@@ -2412,5 +2247,3 @@
   friction: 0.8
   itemDrop: FloorTileItemUraniumMarble
   heatCapacity: 10000
-=======
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))

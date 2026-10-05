@@ -17,7 +17,6 @@
   objectType: Item
 
 - type: construction
-<<<<<<< HEAD
   id: TileBrassFilled
   graph: TilesBrass
   startNode: start
@@ -34,9 +33,6 @@
   objectType: Item
 
 - type: construction
-=======
-  parent: BaseTile
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   id: TileWhite
   graph: TileWhite
   startNode: start

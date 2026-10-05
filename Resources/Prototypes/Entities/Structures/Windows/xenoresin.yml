@@ -5,7 +5,6 @@
   description: Transparent and hardened, yet slightly sticky to the touch. Slightly stronger than a normal reinforced window.
   components:
   - type: Sprite
-<<<<<<< HEAD
     drawdepth: WallTops
     sprite: Structures/Windows/xeno_resin.rsi
   - type: Icon
@@ -45,11 +44,6 @@
             max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-=======
-    sprite: Structures/Windows/exo-resin.rsi
-  - type: Icon
-    sprite: Structures/Windows/exo-resin.rsi
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
   - type: IconSmooth
     base: xwindow
   - type: Construction

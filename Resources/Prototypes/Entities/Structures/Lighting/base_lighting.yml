@@ -24,7 +24,6 @@
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/light_tube.rsi
     drawdepth: WallMountedItems
-    offset: 0, 1
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
       state: base
@@ -69,32 +68,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-<<<<<<< HEAD
-=======
-  - type: PlacementReplacement
-    key: lights
-
-- type: entity
-  parent: BaseWallLight
-  id: AlwaysPoweredWallLight
-  name: light
-  suffix: Always powered
-  description: "An always powered light."
-  components:
-  - type: Construction
-    graph: LightFixture
-    node: tubeLight
-  - type: Sprite
-    sprite: Structures/Wallmounts/Lighting/light-tube.rsi
-    layers:
-    - map: ["enum.PoweredLightLayers.Base"]
-      state: base
-    - map: ["enum.PoweredLightLayers.Glow"]
-      state: glow
-      shader: unshaded
-  - type: Destructible
-    thresholds:
->>>>>>> 4645e40b60 (The Respritening - Batch 1 (#44857))
     - trigger:
         !type:DamageTrigger
         damage: 50
@@ -123,8 +96,7 @@
   parent: AlwaysPoweredWallLight
   components:
   - type: Sprite
-    sprite: Structures/Wallmounts/Lighting/light-tube.rsi
-    offset: 0, 1
+    sprite: Structures/Wallmounts/Lighting/light_tube.rsi
     state: empty
   - type: PointLight
     enabled: false
@@ -287,7 +259,7 @@
       sound:
         path: /Audio/Ambience/Objects/light_hum.ogg
     - type: Sprite
-      sprite: Structures/Wallmounts/Lighting/light-small.rsi
+      sprite: Structures/Wallmounts/Lighting/light_small.rsi
       state: base
     - type: PointLight
       energy: 1.0
@@ -341,7 +313,7 @@
   parent: SmallLight
   components:
   - type: Sprite
-    sprite: Structures/Wallmounts/Lighting/light-small.rsi
+    sprite: Structures/Wallmounts/Lighting/light_small.rsi
     state: empty
   - type: AmbientSound
     enabled: false
@@ -471,7 +443,7 @@
     enabled: false
     radius: 5
     energy: 0.6
-    offset: "0, 0.25"
+    offset: "0, 0.4"
     color: "#7CFC00"
     mask: /Textures/Effects/LightMasks/double_cone.png
   - type: ApcPowerReceiver
@@ -483,8 +455,7 @@
   - type: RotatingLight
     speed: 40
   - type: Sprite
-    sprite: Structures/Wallmounts/Lighting/emergency-light.rsi
-    offset: 0, 1
+    sprite: Structures/Wallmounts/Lighting/emergency_light.rsi
     layers:
     - state: base
       map: [ "enum.EmergencyLightVisualLayers.Base" ]
